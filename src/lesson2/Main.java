@@ -6,7 +6,7 @@ public class Main {
 
         int x = 5;
 
-        Employee emp1 = new Employee(111, "John", 50000);
+        Employee emp1 = new Employee(111,"Dean",40000);
         Employee emp2 = new Employee(112, "Zaineh", 120000);
         Employee emp3 = new Employee(113, "Yasmeen", 130000);
 
@@ -14,6 +14,7 @@ public class Main {
 
         emp0.name = "Charles";
         System.out.println(emp3.monthlyPayment());
+        System.out.println("counter is: " + Employee.counter);
         print();
     }
 

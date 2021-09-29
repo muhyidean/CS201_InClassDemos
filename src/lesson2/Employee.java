@@ -5,6 +5,7 @@ public class Employee {
     int id;
     String name;
     int salary;
+    static int counter = 0;
 
     public Employee () {
 
@@ -14,6 +15,7 @@ public class Employee {
         this.id = id;
         this.name = name;
         this.salary = salary;
+        counter++;
     }
 
     public int monthlyPayment(){

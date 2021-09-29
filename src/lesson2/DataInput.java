@@ -8,14 +8,11 @@ public class DataInput {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter name please: ");
+        System.out.println("Enter first and last name please: ");  // Dean Altarawneh
+        String fName = input.next(); // Dean
+        String lName = input.next(); // Altarawneh
 
-        String fName = input.next();
-        String lName = input.next();
 
-        char c = fName.charAt(0);
-        System.out.println(c);
-
-        System.out.println(fName.charAt(0) + "" + lName.charAt(0));
+        System.out.println(fName.substring(0,1) + lName.substring(0,1));
     }
 }

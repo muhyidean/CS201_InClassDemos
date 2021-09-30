@@ -43,5 +43,22 @@ public class Account {
         this.balance = balance;
     }
 
+    public void deposit(double amountToInput){
+        this.balance += amountToInput;
+    }
+
+    public void withdraw(double amountToWithdraw){ // 1000
+        if(this.balance>=amountToWithdraw){
+            this.balance -= amountToWithdraw;
+        }
+        else{
+            System.out.println("Insufficient funds available ... ");
+        }
+    }
+
+    public void printBalance(){
+        System.out.println("Account " + this.id + " balance: " + this.balance);
+    }
+
 
 }

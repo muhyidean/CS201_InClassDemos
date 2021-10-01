@@ -6,8 +6,10 @@ public class Account {
     private int id;
     private String ownerName;
     private double balance;
+    private Address address;
+    final static private double INTEREST_RATE = 0.03;
 
-    //Constructors
+//    //Constructors
     public Account() {
 
     }
@@ -16,6 +18,13 @@ public class Account {
         this.id = id;
         this.ownerName = ownerName;
         this.balance = balance;
+    }
+
+    public Account(int id, String ownerName, double balance, Address address) {
+        this.id = id;
+        this.ownerName = ownerName;
+        this.balance = balance;
+        this.address = address;
     }
 
     // Methods
@@ -43,6 +52,14 @@ public class Account {
         this.balance = balance;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     public void deposit(double amountToInput){
         this.balance += amountToInput;
     }
@@ -56,9 +73,31 @@ public class Account {
         }
     }
 
+
     public void printBalance(){
         System.out.println("Account " + this.id + " balance: " + this.balance);
     }
 
+    @Override
+    public String toString(){
+        String obj = "AccountId: " + this.id + " Owner: " + this.ownerName;
+        return obj;
+    }
+
+    public static void resetInfo( Account account){
+        account.id = 000;
+        account.ownerName = "Unknown";
+        account.balance = 0;
+    }
+
+    public void addInterest(){
+        double interest = calcInterest(); // PAUSE
+        this.balance += interest;
+    }
+
+    private double calcInterest(){
+        double interest = this.balance * INTEREST_RATE;
+        return interest;
+    }
 
 }

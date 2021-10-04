@@ -18,19 +18,19 @@ public class Employee {
         this.workAddress = workAddress;
     }
 
-    public String getfName() {
+    public String getFName() {
         return fName;
     }
 
-    public void setfName(String fName) {
+    public void setFName(String fName) {
         this.fName = fName;
     }
 
-    public String getlName() {
+    public String getLName() {
         return lName;
     }
 
-    public void setlName(String lName) {
+    public void setLName(String lName) {
         this.lName = lName;
     }
 
@@ -62,4 +62,6 @@ public class Employee {
     public String toString(){
         return "Employee Name: " + this.fName + " " + this.lName + " \nSalary: " + this.salary + " \nWork Address: "  + workAddress.getStreet() + " " + workAddress.getZipcode();
     }
+
+
 }

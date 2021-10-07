@@ -28,6 +28,7 @@ public class Quiz3 {
         char c2 =  (char) (random.nextInt(26) + 97); // 97 - 122
         int  c3 =  (char) random.nextInt(10);  // 0 - 9
         char c4 =  (char) (random.nextInt(6) + 33);   // 33-38
+
         System.out.print(c1 + "" + c2 + "" + c3 + "" + c4);
     }
 }

@@ -7,9 +7,11 @@ public class MockExamSolutions {
 
 
 	public static void main(String[] args) {
-		
-		//rollDice(3);
-		//numberFormat(6411111111L);
+
+
+
+		rollDice(3);
+//		numberFormat(6411111211L);
 		
 		int x = 5; 
 		
@@ -52,7 +54,7 @@ public class MockExamSolutions {
 		String stringPhone = String.valueOf(phone);  // make it a string
 		
 		// 6412224444 -->  641-222-4444
-		if(stringPhone.length() == 10) // checking if equal to 10 
+		if(stringPhone.length() == 10) // checking if equal to 10
 			System.out.println(stringPhone.substring(0,3) + "-" + stringPhone.substring(3,6) + "-" + stringPhone.substring(6));
 		else
 			System.out.println("This is an invalid number!");

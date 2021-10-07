@@ -8,15 +8,11 @@ public class NestedLoops {
 		randomBoard();
 	}
 	
-	public static void randomBoard() 
-	{
+	public static void randomBoard() {
 		Random rand =  new Random();
-		
-		for(int r =0; r< 3 ; r++) 
-		{
-			for (int c = 0 ; c< 3 ; c++) 
-			{
-				System.out.print(rand.nextInt(9)+1 + " ");
+		for(int r =0; r< 3 ; r++) {
+			for (int c = 0 ; c< 3 ; c++) {
+				System.out.print(r * c);
 			}
 			System.out.println("");
 		}

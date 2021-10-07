@@ -11,9 +11,11 @@ public class InClassExercises {
 //        System.out.println(countVowels("I love MIU"));
 //        System.out.println(countWords("I am very happy"));
 
-//        coinToss();
-        calcLuck();
-//        printStarsStudents(5);
+            nestedLoopExercise();
+
+//        InClassExercises.coinToss();
+//        InClassExercises.calcLuck();
+//        InClassExercises.printStarsStudents(5);
 
     }
 
@@ -124,6 +126,28 @@ public class InClassExercises {
         }
 
     }
+
+    /**
+     * 10, 11 --- 19
+     * 20, 21 --- 29
+     * 30, 31 --- 39
+     * 40, 41 --- 49
+     */
+    public static void nestedLoopExercise(){
+        int num = 10;
+        for(int r =0 ; r<4 ; r++){
+            for (int c = 0 ; c<10 ; c++){
+                System.out.print(num + " ");    // inner loop
+                num++;                          // inner loop
+            }
+            System.out.println("");         // outer loop
+        }
+
+
+    }
+
+
+
 
 
 }

@@ -19,6 +19,8 @@ public class MockExamSolutions {
 		Student std1 = new Student("Eggie", 111, 3.8 , pp);
 		Student std2 = new Student("Roda", 112, 3.7 , pp);
 
+		Course c = std1.getCourse();
+		System.out.println(std1.getCourse().getCourseName());
 		System.out.println(std2);
 	}
 	

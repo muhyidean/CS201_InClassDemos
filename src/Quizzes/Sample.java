@@ -1,11 +1,13 @@
 package Quizzes;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Sample {
 
     public static void main(String[] args) {
-        printName();
+        // printName();
+        RPS();
     }
 
     public static int sum(int a , int b){
@@ -49,4 +51,31 @@ public class Sample {
         else
             System.out.println("Yasmeen");
     }
+
+    public static void RPS(){
+
+        Random random = new Random();
+        Scanner input = new Scanner(System.in);
+
+        while(true){
+            int rand = random.nextInt(3);  // 50 - 54
+
+            if(rand == 0 )
+                System.out.println("Rock");
+            else if(rand == 1)
+                System.out.println("Paper");
+            else
+                System.out.println("Scissors");
+
+            System.out.println("Write stop to quit");
+            String answer = input.next();
+            if (answer.equalsIgnoreCase("quit"))
+                break;
+        }
+
+
+
+
+    }
+
 }

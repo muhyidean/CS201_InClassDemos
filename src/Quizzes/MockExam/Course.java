@@ -1,7 +1,7 @@
 package Quizzes.MockExam;
 
 
-class Course{
+public class Course{
     private String courseName;
     private String courseId;
     private int creditHours;

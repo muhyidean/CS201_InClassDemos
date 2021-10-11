@@ -1,6 +1,6 @@
 package Quizzes.MockExam;
 
-class Student{
+public class Student{
 
     private String stdName;
     private int stdId;

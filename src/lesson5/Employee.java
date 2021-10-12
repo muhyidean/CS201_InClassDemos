@@ -60,7 +60,7 @@ public class Employee {
 
     @Override
     public String toString(){
-        return "Employee Name: " + this.fName + " " + this.lName + " \nSalary: " + this.salary + " \nWork Address: "  + workAddress.getStreet() + " " + workAddress.getZipcode();
+        return "----\nEmployee Name: " + this.fName + " " + this.lName + " \nSalary: " + this.salary + " \nWork Address: "  + workAddress.getStreet() + " " + workAddress.getZipcode();
     }
 
 

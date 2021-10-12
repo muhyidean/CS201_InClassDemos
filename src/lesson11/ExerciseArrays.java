@@ -14,8 +14,29 @@ public class ExerciseArrays {
 
         Employee [] employees = {emp1, emp2, emp3};
 
+        deleteEmployee( employees , "Dean");
+
+        for (Employee e : employees){
+            System.out.println(e);
+        }
 
 
+    }
+    /**
+     * Take an array and a number
+     * delete the object with the matching name
+     *
+
+     deleteEmployee(  employeeArray, employeeFname  )
+
+     --> it should delete emp2
+     */
+    public static void deleteEmployee(Employee [] emps ,String name){
+
+        for (int i = 0; i < emps.length; i++) {
+            if(emps[i].getFName().equalsIgnoreCase(name))
+                emps[i] = null;
+        }
     }
 
 

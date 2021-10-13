@@ -18,7 +18,7 @@ public class FileReaderDemo {
 		}
 	}
 	public static void readFile()  throws Exception{
-		FileInputStream fstream = new FileInputStream("/Users/muhyieddin/MIU/CS201/CS201 Material/Demos/CS201_InClassDemos/src/test.txt");
+		FileInputStream fstream = new FileInputStream("/Users/muhyieddin/MIU/CS201/CS201 Material/Demos/CS201_InClassDemos/src/lesson12/test.txt");
 		BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
 		String strLine;
 

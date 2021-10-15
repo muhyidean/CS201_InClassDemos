@@ -8,7 +8,12 @@ public class RecursiveDemo {
 //        printCharsRec("Dean", 0);
 //        System.out.println(summation(3));
 //        System.out.println(countAInWord("ADeana",0));
-        System.out.println(countChar("Adeana",0, 'a'));
+//        System.out.println(countChar("Adeana",0, 'a'));
+
+int [] arr = {6,9,3,5,6,1};
+        System.out.println(findMin(arr,0));
+
+
     }
 
 
@@ -69,5 +74,25 @@ public class RecursiveDemo {
         }
         return count;
     }
+
+    public static int findMin(int [] arr, int index){
+        int nextVal;
+        if(index == arr.length-1)
+            return arr[index];
+        else
+            nextVal = findMin(arr, index+1);
+            if(arr[index] < nextVal)
+                return arr[index];
+            else
+                return nextVal;
+    }
+
+    public static int countCharsString(String word, int i){
+        if (i == word.length())
+            return 0;
+        else
+            return 1 + countCharsString(word,i + 1);
+        }
+
 
 }

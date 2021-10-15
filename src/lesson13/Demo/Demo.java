@@ -13,6 +13,12 @@ public class Demo {
         MultiDimensionalArrayDemo.printTable(result);
     }
 
+    /**
+     *
+     * @param segments This will be an array to determine the sizes of the sub-arrays per element
+     * @param nums This is the array that you are willing to split into n-sizes according to the segments
+     * @return The return value will be an array of arrays containing the spliced arrays
+     */
     public static int[][] splitToSubArrays(int [] segments, int [] nums){
         int [][] months = new int[segments.length][];
         int index = 0;

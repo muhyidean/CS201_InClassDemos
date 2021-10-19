@@ -29,9 +29,37 @@ public class ArraysDemo {
 
 //        Employee [] employees = injectToArray(emp1, emp2, emp3);
 
-//        for (Employee e : employees){
-//            System.out.println(e);
-//        }
+        System.out.println("****************");
+        for (Employee e : employees){
+            e.setFName("CHANGE");
+        }
+
+        for (Employee em : employees){
+            System.out.println(em);
+        }
+
+        System.out.println("=======");
+        int [] nums = {1,2,3};
+
+        for (int i : nums){
+            i = i+1;
+        }
+
+        for (int i : nums){
+            System.out.println(i);
+        }
+
+        System.out.println("String Test=======");
+
+        String [] words = {"one", "two", "three"};
+        for(String s : words){
+            String newString = s.replace('o', '@');
+            System.out.println(newString);
+        }
+
+        for(String s : words){
+            System.out.println(s);
+        }
     }
 
 

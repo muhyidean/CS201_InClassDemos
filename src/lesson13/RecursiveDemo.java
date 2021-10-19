@@ -10,8 +10,9 @@ public class RecursiveDemo {
 //        System.out.println(countAInWord("ADeana",0));
 //        System.out.println(countChar("Adeana",0, 'a'));
 
-int [] arr = {6,9,3,5,6,1};
-        System.out.println(findMin(arr,0));
+        int [] arr = {6,9,3,5,6,1};
+
+        printReversed(arr,0);
 
 
     }
@@ -94,5 +95,23 @@ int [] arr = {6,9,3,5,6,1};
             return 1 + countCharsString(word,i + 1);
         }
 
+
+    public static void printReversed(int [] arr, int index) {
+
+        // base case
+        if(index == arr.length)
+            return;
+        // recursive case
+        else{
+            printReversed(arr , index + 1);
+            System.out.println(arr[index]);
+
+        }
+
+
+
+
+
+    }
 
 }

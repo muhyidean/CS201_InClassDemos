@@ -31,7 +31,6 @@ public class ArrayInClassDemo {
     }
 
     public static void printArr(int [] array){
-
         System.out.print("[");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + ", ");
@@ -61,4 +60,17 @@ public class ArrayInClassDemo {
         return cs201Class;
 
     }
+
+    public static String [] getFirstLetter(String [] names){
+        String [] initialOfNames = new String[names.length];
+
+        for (int i = 0; i < names.length; i++) {
+            initialOfNames[i] = String.valueOf(names[i].charAt(0));
+//            initialOfNames[i] = names[i].substring(0,1);
+        }
+        return initialOfNames;
+    }
+
+
+
 }

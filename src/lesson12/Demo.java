@@ -39,12 +39,15 @@ public class Demo {
 		System.out.println(names[i]); // 46
 
 		System.out.println("The code continued ...");
-		
-		
-		
-		
-			
-		
+
+		if(true) //
+			throw new InputMismatchException();
+
+
+
+
+
+
 	}
 
 }

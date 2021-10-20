@@ -96,8 +96,12 @@ public class RecursiveDemo {
         }
 
 
-    public static void printReversed(int [] arr, int index) {
+    public static void printReversed(int [] arr) {
+        printReversed(arr, 0);
+        }
 
+
+    public static void printReversed(int [] arr, int index) {
         // base case
         if(index == arr.length)
             return;
@@ -105,8 +109,10 @@ public class RecursiveDemo {
         else{
             printReversed(arr , index + 1);
             System.out.println(arr[index]);
-
         }
+
+
+
 
 
 

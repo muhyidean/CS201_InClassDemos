@@ -16,6 +16,7 @@ public class DataSample {
 
         String formattedDate = sdf.format(date);
 
+        System.out.println("===========");
         System.out.println(formattedDate);
     }
 

@@ -2,6 +2,19 @@ package lesson4;
 
 public class Main {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     static int a = 5;
 
     // Make a method that takes 3 numbers and calculates the average
@@ -24,7 +37,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Account acct1 = new Account(111, "Dean", 500); // 0 , null, 0
+
+
+//        InClassDemo.printSomething();
+
+//        Address add = new Address("1000 4th N","Fairfield","IA", 52557 )
+//        Account acc = new Account();
+//        acc.setId(115);
+//        acc.setOwnerName("BLa");
+//        acc.setBalance(500);
+//        acc.setAddress(add);
+
+        Account acct1 = new Account(111, "Dean", 500, null); // 0 , null, 0
+
+
+
 
 
         System.out.println("Executed...1");

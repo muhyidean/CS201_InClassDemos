@@ -2,7 +2,7 @@ package lesson5;
 
 import lesson4.Address;
 
-public class Employee {
+public class Employee{
 
     private String fName;
     private String lName;
@@ -15,7 +15,7 @@ public class Employee {
         this.lName = lName;
         this.salary = salary;
         this.homeAddress = homeAddress;
-        this.workAddress = workAddress;
+        this.workAddress = workAddress; // new Address("1000 4th N","Fairfield","IA",52557)
     }
 
     public String getFName() {
@@ -61,6 +61,13 @@ public class Employee {
     @Override
     public String toString(){
         return "----\nEmployee Name: " + this.fName + " " + this.lName + " \nSalary: " + this.salary + " \nWork Address: "  + workAddress.getStreet() + " " + workAddress.getZipcode();
+    }
+
+    public void printWorkAddress( ){
+        System.out.println(this.workAddress.getStreet());
+        System.out.println(this.workAddress.getCity());
+        System.out.println(this.workAddress.getState());
+        System.out.println(this.workAddress.getZipcode());
     }
 
 

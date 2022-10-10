@@ -2,6 +2,7 @@ package lesson4;
 
 
 public class Account {
+
     // Data members
     private int id;
     private String ownerName;
@@ -13,13 +14,12 @@ public class Account {
     public Account() {
 
     }
-
     public Account(int id, String ownerName, double balance) {
         this.id = id;
         this.ownerName = ownerName;
         this.balance = balance;
     }
-
+    // Account acct1 = new Account(111, "Dean", 500, null);
     public Account(int id, String ownerName, double balance, Address address) {
         this.id = id;
         this.ownerName = ownerName;
@@ -61,6 +61,7 @@ public class Account {
     }
 
     public void deposit(double amountToInput){
+
         this.balance += amountToInput;
     }
 

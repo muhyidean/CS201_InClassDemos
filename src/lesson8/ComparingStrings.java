@@ -44,11 +44,22 @@ public class ComparingStrings {
      */
     public static boolean areRelatives( String n1, String n2){
 
-        // "Dean Altarawneh"
-        int index = n1.indexOf(' '); // 5
-        String lastName = n1.substring(index,n1.length()); // 5 , 16
+        // "Dean Khaled Altarawneh"
+//        int index = findLastSpace(n1);
+        int index = n1.lastIndexOf(' ');
+        String lastName = n1.substring(index+1); // 5 , 16
+        System.out.println("TEST:" + lastName);
         return  n2.endsWith(lastName);
 
+    }
+
+    public static int findLastSpace(String text){
+        int lIndex = text.length()-1;
+        for (int i = lIndex; i >= 0; i--) {
+            if(text.charAt(i) == ' ')
+                return i;
+        }
+        return -1;
     }
 
 }

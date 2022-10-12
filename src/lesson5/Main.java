@@ -17,6 +17,8 @@ public class Main {
 
         System.out.println(emp1);
         System.out.println(emp2);
+
+        emp1.equals(emp2);
     }
 
 }

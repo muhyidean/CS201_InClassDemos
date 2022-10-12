@@ -42,6 +42,7 @@ public class Employee{
         this.salary = salary;
     }
 
+
     public Address getHomeAddress() {
         return homeAddress;
     }
@@ -69,6 +70,5 @@ public class Employee{
         System.out.println(this.workAddress.getState());
         System.out.println(this.workAddress.getZipcode());
     }
-
 
 }

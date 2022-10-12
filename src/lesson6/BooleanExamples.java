@@ -20,6 +20,8 @@ public class BooleanExamples {
 
 
         System.out.println("------");
+
+
         if(z == 0 || x / z > 20){
             System.out.println("Good");
         }

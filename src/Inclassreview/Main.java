@@ -11,10 +11,7 @@ public class Main {
         getFirstWord("He went to the school");
         String text = "He went to the school";
         System.out.println(text.indexOf(" " , 3));
-
-
     }
-
     /*
     Write a method called randomRange() that will take a range (min, max)
      to produce a random number. It should return a random integer.

@@ -6,17 +6,13 @@ public class MultiDimensionalArrayDemo {
 
         int [] nums = {1 ,2 ,3 };
 
+
         int [][] numsTable = {
                 {1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}
         };
-
-
-
-        System.out.println(nums[2]);
-
-        System.out.println(numsTable[0][2]);
+        System.out.println("=====");
 
 
         printTable(numsTable);

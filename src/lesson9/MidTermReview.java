@@ -174,7 +174,6 @@ With membership	        5%	            15%
     /*
     Write a method that takes a word and counts how many a's it has. Then make a generic one too
      */
-
     public static int countChar(String text, char c){
 
         int counter = 0;

@@ -1,11 +1,16 @@
 package lesson5;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student {
     private int id;
     private String name;
     private double gpa;
 
     private boolean status;
+
+    private String [] courses;
 
     public Student(){
 
@@ -42,5 +47,29 @@ public class Student {
 
     public boolean isActive(){
         return this.status;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    public String[] getCourses() {
+        return courses;
+    }
+
+    public void setCourses(String[] courses) {
+        this.courses = courses;
+    }
+
+    public boolean hasCourse(String courseId){
+        for( String course : this.courses){
+            if(courseId.equalsIgnoreCase(course))
+                return true;
+        }
+        return false;
     }
 }

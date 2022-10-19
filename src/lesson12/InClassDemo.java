@@ -8,7 +8,6 @@ public class InClassDemo {
     public static void main(String[] args) {
 
         String [] names = {"Charles", "Taye" , "Danial"};
-
         Scanner input = new Scanner(System.in);
 
         try{

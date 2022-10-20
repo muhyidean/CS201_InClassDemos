@@ -4,15 +4,16 @@ public class RecursiveDemo {
 
     public static void main(String[] args) {
 
-//        System.out.println(factorial(4));
+//        System.out.println(factorial(5));
 //        printCharsRec("Dean", 0);
 //        System.out.println(summation(3));
 //        System.out.println(countAInWord("ADeana",0));
 //        System.out.println(countChar("Adeana",0, 'a'));
 
-        int [] arr = {6,9,3,5,6,1};
-
-        printReversed(arr,0);
+        int [] arr = {6,9,3,5,6,1,7,4,3};
+        System.out.println(findMin(arr,0));
+//
+//        printReversed(arr,0);
 
 
     }
@@ -27,12 +28,12 @@ public class RecursiveDemo {
 
     }
 
-    public static void printCharsRec(String word, int index){
+    public static void printCharsRec(String word, int index){ //
         if(index == word.length())
             return;
         else{
-            System.out.println(word.charAt(index));
             printCharsRec(word, index + 1);
+            System.out.println(word.charAt(index));
 
         }
     }
@@ -53,7 +54,7 @@ public class RecursiveDemo {
             if(word.charAt(i) == 'A' || word.charAt(i) == 'a')
                 return 1 + countAInWord(word, i+1);
             else
-                return 0 + countAInWord(word, i+1);
+                return countAInWord(word, i+1);
     }
 
     public static int countChar(String word, int i, char c){ // 0
@@ -66,7 +67,6 @@ public class RecursiveDemo {
         else
             return 0 + countChar(word, i+1, c);
     }
-
     public static int countCharLoop(String word, char c){
         int count = 0;
         for (int i = 0; i < word.length(); i++) {
@@ -87,6 +87,7 @@ public class RecursiveDemo {
             else
                 return nextVal;
     }
+
 
     public static int countCharsString(String word, int i){
         if (i == word.length())

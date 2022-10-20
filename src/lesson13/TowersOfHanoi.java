@@ -2,7 +2,7 @@ package lesson13;
 
 public class TowersOfHanoi {
     public static void main(String[] args) {
-        towersOfHanoi(6,1,2,3);
+        towersOfHanoi(3,1,2,3);
     }
 
     public static void towersOfHanoi(int N,      //number of disks
@@ -11,7 +11,6 @@ public class TowersOfHanoi {
                                      int spare ){//"middle" peg
 
         if ( N == 1 ) {
-
             moveOne( from, to );
 
         } else {

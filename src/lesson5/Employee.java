@@ -10,6 +10,9 @@ public class Employee{
     private Address homeAddress;
     private Address workAddress;
 
+    public Employee (){
+
+    }
     public Employee(String fName, String lName, double salary, Address homeAddress, Address workAddress) {
         this.fName = fName;
         this.lName = lName;
